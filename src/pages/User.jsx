@@ -62,7 +62,7 @@ function User() {
                     <div className='mb-6 md:mb-0'>
                         <div className='shadow-md'>
                             <figure>
-                                <img className='sm: h-96 rounded-xl' src={avatar_url} alt='' />
+                                <img className='sm: h-96 md:h-60 rounded-xl' src={avatar_url} alt='' />
                             </figure>
                             <div className=' justify-end'>
                                 <h2 className='text-xl font-bold mb-0'>{name}</h2>
