@@ -52,7 +52,7 @@ function User() {
         <>
             <div className='max-w-7xl mx-auto p-8 '>
                 <div className='mb-4'>
-                    <Link to='/' className='btn btn-ghost'>
+                    <Link to='/' className='btn btn-ghost underline text-base'>
                         Back To Search
                     </Link>
                 </div>
@@ -86,9 +86,9 @@ function User() {
                                     href={html_url}
                                     target='_blank'
                                     rel='noreferrer'
-                                    className='btn btn-outline'
+                                    className=' border py-2 px-4 rounded-xl font-semibold text-gray-400 hover:text-gray-200'
                                 >
-                                    Visit Github Profile
+                                    VISIT GITHUB PROFILE
                                 </a>
                             </div>
                         </div>
