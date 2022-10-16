@@ -60,7 +60,7 @@ function User() {
                 <div className='grid grid-cols-1 xl:grid-cols-3 lg:grid-cols-3
                  md:grid-cols-3 mb-8 md:gap-8'>
                     <div className='custom-card-image mb-6 md:mb-0'>
-                        <div className='shadow-xl card '>
+                        <div className='shadow-xl  '>
                             <figure>
                                 <img className='sm: h-96 rounded-xl' src={avatar_url} alt='' />
                             </figure>
@@ -93,17 +93,17 @@ function User() {
                             </div>
                         </div>
 
-                        <div className='w-full rounded-lg shadow-md bg-gray-800 stats'>
+                        <div className='w-full rounded-lg shadow-md bg-gray-800 stats text-gray-300'>
                             {location && (
                                 <div className='stat'>
-                                    <div className='stat-title text-md'>Location</div>
-                                    <div className='text-lg stat-value'>{location}</div>
+                                    <div className=' text-md '>Location</div>
+                                    <div className='text-lg font-extrabold'>{location}</div>
                                 </div>
                             )}
                             {blog && (
                                 <div className='stat'>
-                                    <div className='stat-title text-md'>Website</div>
-                                    <div className='text-lg stat-value'>
+                                    <div className='text-md'>Website</div>
+                                    <div className='text-lg font-extrabold'>
                                         <a href={websiteUrl} target='_blank' rel='noreferrer'>
                                             {websiteUrl}
                                         </a>
@@ -112,7 +112,7 @@ function User() {
                             )}
                             {twitter_username && (
                                 <div className='stat'>
-                                    <div className='stat-title text-md'>Twitter</div>
+                                    <div className=' text-md'>Twitter</div>
                                     <div className='text-lg stat-value'>
                                         <a
                                             href={`https://twitter.com/${twitter_username}`}
@@ -128,7 +128,7 @@ function User() {
                     </div>
                 </div>
 
-                <div className='w-full py-5 mb-6 rounded-lg shadow-md bg-gray-800  stats'>
+                <div className='w-full py-5 mb-6 rounded-lg shadow-md bg-gray-800  stats text-gray-300'>
                     <div className='grid grid-cols-1 md:grid-cols-3'>
                         <div className='stat'>
                             <div className='stat-figure text-secondary'>
