@@ -32,7 +32,7 @@ const UserResults = () => {
         return (
 
 
-            <div className="grid grid-cols-2 gap-7 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 mt-10">
+            <div className="grid grid-cols-2 gap-3 xl:grid-cols-4 lg:grid-cols-3 mt-10">
 
                 {users.map(user => {
 

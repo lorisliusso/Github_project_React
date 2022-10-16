@@ -59,9 +59,9 @@ function User() {
 
                 <div className='grid grid-cols-1 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-3 mb-8 md:gap-8'>
                     <div className='custom-card-image mb-6 md:mb-0'>
-                        <div className='rounded-lg shadow-xl card '>
+                        <div className='shadow-xl card '>
                             <figure>
-                                <img className='sm: h-96 rounded-sm' src={avatar_url} alt='' />
+                                <img className='sm: h-96 rounded-xl' src={avatar_url} alt='' />
                             </figure>
                             <div className='card-body justify-end'>
                                 <h2 className='card-title mb-0'>{name}</h2>

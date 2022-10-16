@@ -34,7 +34,7 @@ const App= ()=> {
    
     <Router>
 
-    <div className="flex flex-col w-screen h-screen overflow-x-hidden ">
+    <div className="flex flex-col w-screen h-screen overflow-x-hidden bg-gray-900 ">
 
         <Navbar/> {/* always present */}
 
