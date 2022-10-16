@@ -59,7 +59,7 @@ function User() {
 
                 <div className='grid grid-cols-1 xl:grid-cols-3 lg:grid-cols-3
                  md:grid-cols-3 mb-8 md:gap-8'>
-                    <div className='custom-card-image mb-6 md:mb-0'>
+                    <div className='mb-6 md:mb-0'>
                         <div className='shadow-xl  '>
                             <figure>
                                 <img className='sm: h-96 rounded-xl' src={avatar_url} alt='' />
