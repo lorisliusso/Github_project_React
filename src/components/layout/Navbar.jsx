@@ -1,10 +1,8 @@
 import { FaGithub } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 
-///////////////////////////////////////////////////////////
 
-
-const Navbar = ({ title }) => {
+const Navbar = () => {
 
 
     return (
@@ -19,16 +17,17 @@ const Navbar = ({ title }) => {
 
                 < div className="flex flex-none px-2 mx-2 cursor-pointer" >
 
-                    <FaGithub className='pr-2 text-3xl' />
+                    <Link to='/' ><FaGithub className='pr-2 text-3xl' /></Link>
 
-                    <Link to='/' className='font-bold '>{title}</Link>
+                    <Link to='/' className='font-bold '>Github Finder</Link>
 
                 </div >
 
 
                 {/* RIGHT: LINKS */}
 
-                < div className="hidden md:flex flex-1 px-2 mx-2 space-x-6 justify-end" >
+                <
+                    div className="hidden md:flex flex-1 px-2 mx-2 space-x-6 justify-end" >
 
                     <Link to='/' className='hover:bg-gray-600 rounded-xl p-3'>HOME</Link>
                     <Link to='/about' className='hover:bg-gray-600 rounded-xl p-3'>ABOUT</Link>
@@ -47,16 +46,6 @@ const Navbar = ({ title }) => {
 
     )
 }
-
-
-
-/////////////////////////////////////////////////////////////////////////////////////////
-
-
-Navbar.defaultProps = {
-    title: 'Github Finder'
-}
-
 
 
 export default Navbar;

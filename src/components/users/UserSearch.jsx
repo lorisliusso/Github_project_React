@@ -1,13 +1,12 @@
 import { useState, useContext } from 'react'
 import GithubContext from '../../context/github/GithubContext'
-import AlertContext from '../../context/alert/AlertContext'
 import { searchUsers } from '../../context/github/GithubActions'
+import { toast } from "react-toastify";
 
 const UserSearch = () => {
     const [text, setText] = useState('')
 
     const { users, dispatch } = useContext(GithubContext)
-    const { setAlert } = useContext(AlertContext)
 
     const handleChange = (e) => setText(e.target.value)
 
@@ -15,7 +14,7 @@ const UserSearch = () => {
         e.preventDefault()
 
         if (text === '') {
-            setAlert('Please enter something', 'error')
+            toast.error('Please enter something')
         } else {
             dispatch({ type: 'SET_LOADING' })
             const users = await searchUsers(text)

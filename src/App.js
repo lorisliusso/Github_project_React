@@ -6,29 +6,18 @@ import User from './pages/User';
 import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
 import {GithubProvider} from './context/github/GithubContext';
-import { AlertProvider } from './context/alert/AlertContext';
-import Alert from './components/layout/Alert';
-
-
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-
-import './App.css';
-import UserSearch from './components/users/UserSearch';
-
-
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 
 const App= ()=> {
-
-
-
 
 
   return (
 
     <GithubProvider> 
 
-      <AlertProvider>
 
 {/*REACT ROUTER */}
    
@@ -39,14 +28,12 @@ const App= ()=> {
         <Navbar/> {/* always present */}
 
         {/* ROUTES */}
-          <Alert />
           <Routes>
 
             <Route path='/' element= {<Home/>}   />
             <Route path='/about' element= {<About/>}   />
             <Route path='/user/:login' element= {<User/>}   />
             <Route path='/contact' element= {<Contact/>}   />
-            <Route path='/notfound' element= {<NotFound/>}   />
             <Route path='/*' element= {<NotFound/>}   />
 
           </Routes>
@@ -61,26 +48,24 @@ const App= ()=> {
 
 {/*REACT ROUTER */}
 
-
-
-
-</AlertProvider>
-
+<ToastContainer
+        position="top-center"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+      />
 
 
 
 </GithubProvider>
 
-
-
   )
-
-
-
-
-
-
-
 
 
 }

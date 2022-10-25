@@ -4,29 +4,12 @@ import UserItem from "./UserItem";
 import GithubContext from "../../context/github/GithubContext";
 
 
-
 const UserResults = () => {
 
     const { users, loading, searchUsers } = useContext(GithubContext)
 
-    //////USE STATE 
 
-    //...moved to context
-
-    ///////////////////
-
-
-    //////USE EFFECT
-
-    ///////////////////
-
-
-    //const fetchUsers MOVED TO THE CONTEXT
-
-
-
-
-    if (!loading) {  //if loading is false (if loading's done)
+    if (!loading) {  //if loading is false 
 
 
         return (
@@ -45,7 +28,7 @@ const UserResults = () => {
                 })}
 
             </div>
-        )//return
+        )
 
 
     } else {

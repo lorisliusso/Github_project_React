@@ -39,6 +39,4 @@ const RepoItem = ({ repo }) => {
     )
 }
 
-
-
 export default RepoItem

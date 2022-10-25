@@ -3,9 +3,6 @@ const Footer = () => {
     const footerYear = new Date().getFullYear()
 
 
-
-
-
     return (
 
         <footer className="p-10 bg-gray-600 text-white h-fit  ">
@@ -32,12 +29,6 @@ const Footer = () => {
             </div>
 
         </footer>
-
-
-
-
-
-
 
     )
 }

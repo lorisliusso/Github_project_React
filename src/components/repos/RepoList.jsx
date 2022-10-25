@@ -1,6 +1,5 @@
 import RepoItem from "./RepoItem"
 
-
 const RepoList = ({ repos }) => {
 
     return (

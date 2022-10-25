@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { FaGithub } from 'react-icons/fa'
 
+//every single user block of the grid:
 
 const UserItem = ({ user }) => {
 

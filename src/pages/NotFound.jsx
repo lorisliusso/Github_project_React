@@ -4,15 +4,10 @@ import { Link } from 'react-router-dom'
 const NotFound = () => {
 
 
-
-
-
     return (
 
 
         <div className='h-4/5'>
-
-
 
             <div className="max-w-lg text-center container mx-auto  ">
 
