@@ -1,6 +1,7 @@
 import { FaEye, FaInfo, FaLink, FaStar, FaUtensils } from 'react-icons/fa'
+import { RepoType } from '../../context/GithubContext';
 
-const RepoItem = ({ repo }) => {
+const RepoItem = ({ repo }: { repo: RepoType }): JSX.Element => {
     const {
         name,
         description,

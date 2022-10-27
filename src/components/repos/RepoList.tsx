@@ -1,6 +1,7 @@
-import RepoItem from "./RepoItem"
+import RepoItem from './RepoItem';
+import { RepoType, ReposType } from '../../context/GithubContext';
 
-const RepoList = ({ repos }) => {
+const RepoList = ({ repos }: { repos: ReposType }): JSX.Element => {
 
     return (
         <div className='rounded-lg shadow-lg '>
