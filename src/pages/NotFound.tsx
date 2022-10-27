@@ -1,7 +1,7 @@
 import { FaHome } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 
-const NotFound = () => {
+const NotFound = (): JSX.Element => {
 
 
     return (

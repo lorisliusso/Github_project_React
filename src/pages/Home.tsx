@@ -1,13 +1,14 @@
 import UserResults from "../components/users/UserResults";
 import UserSearch from "../components/users/UserSearch";
 import { useContext } from "react";
-import GithubContext from "../context/github/GithubContext";
+import GithubContext from "../context/GithubContext";
 import GithubLogo from "../icons/github-logo.svg"
 
 
-const Home = () => {
+const Home = (): JSX.Element => {
 
     const { users } = useContext(GithubContext)
+
 
     return (
 

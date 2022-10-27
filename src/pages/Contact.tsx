@@ -1,4 +1,4 @@
-const About = () => {
+const Contact = (): JSX.Element => {
 
 
 
@@ -12,4 +12,4 @@ const About = () => {
     )
 }
 
-export default About;
+export default Contact;

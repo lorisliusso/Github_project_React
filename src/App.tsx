@@ -5,50 +5,50 @@ import About from './pages/About';
 import User from './pages/User';
 import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
-import {GithubProvider} from './context/github/GithubContext';
+import { GithubProvider } from './context/GithubContext';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 
-const App= ()=> {
+const App = () => {
 
 
   return (
 
-    <GithubProvider> 
+    <GithubProvider>
 
 
-{/*REACT ROUTER */}
-   
-    <Router>
+      {/*REACT ROUTER */}
 
-    <div className="flex flex-col w-screen h-screen overflow-x-hidden bg-gray-800 text-gray-300 ">
+      <Router>
 
-        <Navbar/> {/* always present */}
+        <div className="flex flex-col w-screen h-screen overflow-x-hidden bg-gray-800 text-gray-300 ">
 
-        {/* ROUTES */}
+          <Navbar /> {/* always present */}
+
+          {/* ROUTES */}
           <Routes>
 
-            <Route path='/' element= {<Home/>}   />
-            <Route path='/about' element= {<About/>}   />
-            <Route path='/user/:login' element= {<User/>}   />
-            <Route path='/contact' element= {<Contact/>}   />
-            <Route path='/*' element= {<NotFound/>}   />
+            <Route path='/' element={<Home />} />
+            <Route path='/about' element={<About />} />
+            <Route path='/user/:login' element={<User />} />
+            <Route path='/contact' element={<Contact />} />
+            <Route path='/*' element={<NotFound />} />
 
           </Routes>
-         {/* ROUTES */}
+          {/* ROUTES */}
 
 
-        <Footer/>  {/* always present */}
+          <Footer />  {/* always present */}
 
-    </div>
+        </div>
 
-</Router>
+      </Router>
 
-{/*REACT ROUTER */}
+      {/*REACT ROUTER */}
 
-<ToastContainer
+      <ToastContainer
         position="top-center"
         autoClose={3000}
         hideProgressBar={false}
@@ -63,7 +63,7 @@ const App= ()=> {
 
 
 
-</GithubProvider>
+    </GithubProvider>
 
   )
 

@@ -1,16 +1,16 @@
 import { useState, useContext } from 'react'
-import GithubContext from '../../context/github/GithubContext'
-import { searchUsers } from '../../context/github/GithubActions'
+import GithubContext from '../../context/GithubContext'
+import { searchUsers } from '../../context/GithubActions'
 import { toast } from "react-toastify";
 
-const UserSearch = () => {
-    const [text, setText] = useState('')
+const UserSearch = (): JSX.Element => {
+    const [text, setText] = useState('') //OK: INFER
 
     const { users, dispatch } = useContext(GithubContext)
 
-    const handleChange = (e) => setText(e.target.value)
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => setText(e.target.value)
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
 
         if (text === '') {

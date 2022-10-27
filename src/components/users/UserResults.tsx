@@ -1,12 +1,12 @@
 import { useContext } from "react";
 import Spinner from "../layout/Spinner";
 import UserItem from "./UserItem";
-import GithubContext from "../../context/github/GithubContext";
+import GithubContext from "../../context/GithubContext";
 
 
-const UserResults = () => {
+const UserResults = (): JSX.Element => {
 
-    const { users, loading, searchUsers } = useContext(GithubContext)
+    const { users, loading } = useContext(GithubContext)
 
 
     if (!loading) {  //if loading is false 
@@ -17,7 +17,7 @@ const UserResults = () => {
 
             <div className="grid grid-cols-2 gap-3 xl:grid-cols-4 lg:grid-cols-3 mt-10">
 
-                {users.map(user => {
+                {users.map((user: any) => {
 
                     return (
 

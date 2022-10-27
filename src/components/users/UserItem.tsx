@@ -1,9 +1,11 @@
 import { Link } from 'react-router-dom'
 import { FaGithub } from 'react-icons/fa'
+import { UserType } from '../../context/GithubContext';
+
 
 //every single user block of the grid:
 
-const UserItem = ({ user }) => {
+const UserItem = ({ user }: { user: UserType }): JSX.Element => {
 
     const { login, avatar_url } = user;
 
